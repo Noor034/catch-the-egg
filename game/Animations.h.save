@@ -1,0 +1,24 @@
+#ifndef ANIMATIONS_H_INCLUDED
+#define ANIMATIONS_H_INCLUDED
+
+void moveDim3()
+{
+	egg2_y -= dk;
+
+
+	if (score>250 && egg2_y <= baskety + 30 && egg2_x > basketx && egg2_x < basketx + 70)
+	{
+		egg2_x = chicken3_x + 40;
+		egg2_y = chicken3_y - 30;
+
+	bonus += 50;
+	}
+
+	else if (egg2_y < 0)
+	{
+		egg2_x = chicken3_x + 40;
+	egg2_y = chicken3_y - 30;
+}
+}
+
+#endif // ANIMATIONS_H_INCLUDED
